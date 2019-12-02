@@ -1,0 +1,650 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Banc d'essai mesure"
+Date "2019-11-23"
+Rev "R1"
+Comp "PI06 Fusex"
+Comment1 "Arnaud Schlumberger"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 5DD7FBC4
+P 5000 3800
+F 0 "A1" H 5000 2711 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 5000 2620 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 5000 3800 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5000 3800 50  0001 C CNN
+	1    5000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J6
+U 1 1 5DD80DF2
+P 8800 3300
+F 0 "J6" H 8880 3292 50  0000 L CNN
+F 1 "Conn_01x08" H 8880 3201 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 8800 3300 50  0001 C CNN
+F 3 "~" H 8800 3300 50  0001 C CNN
+	1    8800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J4
+U 1 1 5DD83427
+P 7200 3450
+F 0 "J4" H 7118 2925 50  0000 C CNN
+F 1 "Conn_01x06" H 7118 3016 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7200 3450 50  0001 C CNN
+F 3 "~" H 7200 3450 50  0001 C CNN
+	1    7200 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5DD85052
+P 7400 3650
+F 0 "#PWR012" H 7400 3400 50  0001 C CNN
+F 1 "GND" V 7405 3522 50  0000 R CNN
+F 2 "" H 7400 3650 50  0001 C CNN
+F 3 "" H 7400 3650 50  0001 C CNN
+	1    7400 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR011
+U 1 1 5DD852F3
+P 7400 3550
+F 0 "#PWR011" H 7400 3400 50  0001 C CNN
+F 1 "VCC" V 7417 3678 50  0000 L CNN
+F 2 "" H 7400 3550 50  0001 C CNN
+F 3 "" H 7400 3550 50  0001 C CNN
+	1    7400 3550
+	0    1    1    0   
+$EndComp
+Text Label 7400 3450 0    50   ~ 0
+MISO
+Text Label 7400 3350 0    50   ~ 0
+MOSI
+Text Label 7400 3250 0    50   ~ 0
+SCK
+Text Label 7400 3150 0    50   ~ 0
+CS1
+$Comp
+L power:VCC #PWR015
+U 1 1 5DD85C26
+P 8600 3000
+F 0 "#PWR015" H 8600 2850 50  0001 C CNN
+F 1 "VCC" V 8618 3127 50  0000 L CNN
+F 2 "" H 8600 3000 50  0001 C CNN
+F 3 "" H 8600 3000 50  0001 C CNN
+	1    8600 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5DD85F07
+P 8600 3100
+F 0 "#PWR016" H 8600 2850 50  0001 C CNN
+F 1 "GND" V 8605 2972 50  0000 R CNN
+F 2 "" H 8600 3100 50  0001 C CNN
+F 3 "" H 8600 3100 50  0001 C CNN
+	1    8600 3100
+	0    1    1    0   
+$EndComp
+Text Label 8600 3200 2    50   ~ 0
+SCL
+Text Label 8600 3300 2    50   ~ 0
+SDA
+Text Label 8600 3400 2    50   ~ 0
+XDA
+Text Label 8600 3500 2    50   ~ 0
+XCL
+Text Label 8600 3600 2    50   ~ 0
+AD0
+Text Label 8600 3700 2    50   ~ 0
+INT
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5DD88012
+P 6850 2250
+F 0 "#FLG01" H 6850 2325 50  0001 C CNN
+F 1 "PWR_FLAG" H 6850 2423 50  0000 C CNN
+F 2 "" H 6850 2250 50  0001 C CNN
+F 3 "~" H 6850 2250 50  0001 C CNN
+	1    6850 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5DD883E2
+P 7250 2250
+F 0 "#FLG02" H 7250 2325 50  0001 C CNN
+F 1 "PWR_FLAG" H 7250 2423 50  0000 C CNN
+F 2 "" H 7250 2250 50  0001 C CNN
+F 3 "~" H 7250 2250 50  0001 C CNN
+	1    7250 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR010
+U 1 1 5DD886A1
+P 7250 2250
+F 0 "#PWR010" H 7250 2100 50  0001 C CNN
+F 1 "VCC" H 7268 2423 50  0000 C CNN
+F 2 "" H 7250 2250 50  0001 C CNN
+F 3 "" H 7250 2250 50  0001 C CNN
+	1    7250 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5DD889AB
+P 6850 2250
+F 0 "#PWR08" H 6850 2000 50  0001 C CNN
+F 1 "GND" H 6855 2077 50  0000 C CNN
+F 2 "" H 6850 2250 50  0001 C CNN
+F 3 "" H 6850 2250 50  0001 C CNN
+	1    6850 2250
+	1    0    0    -1  
+$EndComp
+Text Label 4500 4400 2    50   ~ 0
+MISO
+Text Label 4500 4300 2    50   ~ 0
+MOSI
+Text Label 4500 4200 2    50   ~ 0
+CS1
+Text Label 4500 4500 2    50   ~ 0
+SCK
+Text Label 5500 4200 0    50   ~ 0
+SDA
+Text Label 5500 4300 0    50   ~ 0
+SCL
+Text Label 4500 3400 2    50   ~ 0
+INT
+$Comp
+L power:VCC #PWR06
+U 1 1 5DD8B831
+P 5200 2800
+F 0 "#PWR06" H 5200 2650 50  0001 C CNN
+F 1 "VCC" V 5200 3000 50  0000 C CNN
+F 2 "" H 5200 2800 50  0001 C CNN
+F 3 "" H 5200 2800 50  0001 C CNN
+	1    5200 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5DD8CF7E
+P 5250 4800
+F 0 "#PWR07" H 5250 4550 50  0001 C CNN
+F 1 "GND" V 5255 4672 50  0000 R CNN
+F 2 "" H 5250 4800 50  0001 C CNN
+F 3 "" H 5250 4800 50  0001 C CNN
+	1    5250 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 4800 5100 4800
+Wire Wire Line
+	5100 4800 5250 4800
+Connection ~ 5100 4800
+$Comp
+L Device:R R1
+U 1 1 5DD9084E
+P 8300 4500
+F 0 "R1" H 8370 4546 50  0000 L CNN
+F 1 "R_PULL_DOWN 1kR" H 8370 4455 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8230 4500 50  0001 C CNN
+F 3 "~" H 8300 4500 50  0001 C CNN
+	1    8300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5DD90CED
+P 8300 4650
+F 0 "#PWR014" H 8300 4400 50  0001 C CNN
+F 1 "GND" H 8305 4477 50  0000 C CNN
+F 2 "" H 8300 4650 50  0001 C CNN
+F 3 "" H 8300 4650 50  0001 C CNN
+	1    8300 4650
+	1    0    0    -1  
+$EndComp
+Text Label 8300 4350 0    50   ~ 0
+AD0
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5DD91713
+P 7100 4450
+F 0 "J3" H 7180 4442 50  0000 L CNN
+F 1 "Conn_01x02" H 7180 4351 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7100 4450 50  0001 C CNN
+F 3 "~" H 7100 4450 50  0001 C CNN
+	1    7100 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR09
+U 1 1 5DD9219C
+P 6900 4550
+F 0 "#PWR09" H 6900 4400 50  0001 C CNN
+F 1 "VCC" V 6918 4677 50  0000 L CNN
+F 2 "" H 6900 4550 50  0001 C CNN
+F 3 "" H 6900 4550 50  0001 C CNN
+	1    6900 4550
+	0    -1   -1   0   
+$EndComp
+Text Label 6900 4450 2    50   ~ 0
+AD0
+Text Notes 8500 4450 0    50   ~ 0
+Resistance de Pull-down\n pour adresse I2C\n
+Text Notes 7200 4400 0    50   ~ 0
+Cavalier changement \nd'adresse I2C/MPU6050\n
+Wire Notes Line
+	8150 4650 6600 4650
+Wire Notes Line
+	9500 4250 9500 4900
+Wire Notes Line
+	8150 4250 8150 4900
+Wire Notes Line
+	6600 4250 9500 4250
+Text Notes 6600 4200 0    98   ~ 20
+Section de configuration hardware\n de l'adresse I2C du MPU6050\n
+Wire Notes Line
+	6600 4250 6600 4900
+Wire Notes Line
+	6600 4900 9500 4900
+Text Notes 6500 5100 0    50   ~ 0
+AD0 par défaut à 0V par résistance de pull-down. Alors adresse I2C = 11010000.\nSi cavalier mis, alors AD0 = 5V, adresse I2C = 11010001
+Text Notes 7700 2900 0    50   ~ 0
+Connecteur pour accéléromètre-gyroscope\n           MPU6050\n
+Wire Notes Line
+	9350 2750 9350 3800
+Wire Notes Line
+	9350 3800 7700 3800
+Text Notes 6600 2900 0    50   ~ 0
+Connecteur pour lecteur de\n carte microSD
+Wire Notes Line
+	7700 3750 6600 3750
+Wire Notes Line
+	6600 3750 6600 2750
+Wire Notes Line
+	6600 2750 9350 2750
+Wire Notes Line
+	7700 2750 7700 3800
+Text Notes 6600 2700 0    118  ~ 24
+Section connexions pour composants
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5DDC3F12
+P 8050 2250
+F 0 "J5" H 8130 2242 50  0000 L CNN
+F 1 "Conn_01x02_alimExt" H 8130 2151 50  0000 L CNN
+F 2 "rex:BatConn" H 8050 2250 50  0001 C CNN
+F 3 "~" H 8050 2250 50  0001 C CNN
+	1    8050 2250
+	1    0    0    -1  
+$EndComp
+Text Label 7850 2250 2    47   ~ 0
+VIN
+$Comp
+L power:GND #PWR013
+U 1 1 5DDC4C0A
+P 7850 2350
+F 0 "#PWR013" H 7850 2100 50  0001 C CNN
+F 1 "GND" V 7855 2222 50  0000 R CNN
+F 2 "" H 7850 2350 50  0001 C CNN
+F 3 "" H 7850 2350 50  0001 C CNN
+	1    7850 2350
+	0    1    1    0   
+$EndComp
+Text Notes 7550 2150 0    47   ~ 0
+Connecteur alimentaion externe\n7 à 12 V
+Text Notes 6650 2000 0    39   Italic 0
+Marqueurs Kicad\n
+Wire Notes Line
+	8700 1900 8700 2450
+Wire Notes Line
+	8700 2450 6600 2450
+Wire Notes Line
+	6600 2450 6600 1900
+Wire Notes Line
+	6600 1900 8700 1900
+Wire Notes Line
+	7500 1900 7500 2450
+Text Notes 6600 1850 0    118  ~ 24
+Section d'alimentation\n
+Text Label 4900 2800 1    47   ~ 0
+VIN
+Text Label 4200 3200 0    47   ~ 0
+2
+Text Label 4200 3300 0    47   ~ 0
+1
+Text Label 4200 3400 0    47   ~ 0
+5
+Text Label 4200 3500 0    47   ~ 0
+6
+Text Label 4200 3600 0    47   ~ 0
+7
+Text Label 4200 3700 0    47   ~ 0
+8
+Text Label 4200 3800 0    47   ~ 0
+9
+Text Label 4150 3900 0    47   ~ 0
+10
+Text Label 4200 4000 0    47   ~ 0
+11
+Text Label 4200 4100 0    47   ~ 0
+12
+Text Label 4200 4200 0    47   ~ 0
+13
+Text Label 4200 4300 0    47   ~ 0
+14
+Text Label 4200 4400 0    47   ~ 0
+15
+Text Label 4200 4500 0    47   ~ 0
+16
+Text Label 5150 4800 2    47   ~ 0
+4
+Text Label 5200 4800 0    47   ~ 0
+29
+Text Label 4900 2650 0    47   ~ 0
+30
+Text Label 5100 2700 0    47   ~ 0
+17
+Text Label 5200 2750 0    47   ~ 0
+27
+Wire Wire Line
+	5100 2650 5100 2800
+Wire Wire Line
+	4900 2800 4900 2650
+Text Label 5700 3200 0    47   ~ 0
+28
+Text Label 5700 3300 0    47   ~ 0
+3
+Text Label 5700 3600 0    47   ~ 0
+18
+Text Label 5700 3800 0    47   ~ 0
+19
+Text Label 5700 3900 0    47   ~ 0
+20
+Text Label 5700 4000 0    47   ~ 0
+21
+Text Label 5700 4100 0    47   ~ 0
+22
+Text Label 5700 4200 0    47   ~ 0
+23
+Text Label 5700 4300 0    47   ~ 0
+24
+Text Label 5700 4400 0    47   ~ 0
+25
+Text Label 5700 4500 0    47   ~ 0
+26
+Wire Wire Line
+	4500 4500 4200 4500
+Wire Wire Line
+	4200 4400 4500 4400
+Wire Wire Line
+	4500 4300 4200 4300
+Wire Wire Line
+	4200 4200 4500 4200
+Wire Wire Line
+	4500 4100 4200 4100
+Wire Wire Line
+	4200 4000 4500 4000
+Wire Wire Line
+	4200 3800 4500 3800
+Wire Wire Line
+	4500 3700 4200 3700
+Wire Wire Line
+	4200 3400 4500 3400
+Wire Wire Line
+	4500 3300 4200 3300
+Wire Wire Line
+	4500 3200 4200 3200
+Wire Wire Line
+	5500 3200 5700 3200
+Wire Wire Line
+	5700 3300 5500 3300
+Wire Wire Line
+	5500 3600 5700 3600
+Wire Wire Line
+	5700 3800 5500 3800
+Wire Wire Line
+	5500 3900 5700 3900
+Wire Wire Line
+	5700 4000 5500 4000
+Wire Wire Line
+	5500 4100 5700 4100
+Wire Wire Line
+	5700 4200 5500 4200
+Wire Wire Line
+	5500 4300 5700 4300
+Wire Wire Line
+	5700 4400 5500 4400
+Wire Wire Line
+	5500 4500 5700 4500
+Text Notes 1750 2400 0    47   ~ 0
+Note sur l'étiquettage des connexions:\nLes étiquettes de 1 à  30 permettent l'ajout de connecteurs\n auxilliaires autour de l'Arduino afin d'améliorer la flexibilité du banc d'essai\n (possibilité de rajouter des composants après la conception)
+$Comp
+L Connector_Generic:Conn_01x15 J1
+U 1 1 5DDEFBC4
+P 2400 3650
+F 0 "J1" H 2480 3692 50  0000 L CNN
+F 1 "Conn_01x15" H 2480 3601 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 2400 3650 50  0001 C CNN
+F 3 "~" H 2400 3650 50  0001 C CNN
+	1    2400 3650
+	1    0    0    -1  
+$EndComp
+Text Label 2200 2950 2    47   ~ 0
+1
+Text Label 2200 3050 2    47   ~ 0
+2
+Text Label 2200 3150 2    47   ~ 0
+3
+Text Label 2200 3250 2    47   ~ 0
+4
+Text Label 2200 3350 2    47   ~ 0
+5
+Text Label 2200 3450 2    47   ~ 0
+6
+Text Label 2200 3550 2    47   ~ 0
+7
+Text Label 2200 3650 2    47   ~ 0
+8
+Text Label 2200 3750 2    47   ~ 0
+9
+Text Label 2200 3850 2    47   ~ 0
+10
+Text Label 2200 3950 2    47   ~ 0
+11
+Text Label 2200 4050 2    47   ~ 0
+12
+Text Label 2200 4150 2    47   ~ 0
+13
+Text Label 2200 4250 2    47   ~ 0
+14
+Text Label 2200 4350 2    47   ~ 0
+15
+$Comp
+L Connector_Generic:Conn_01x15 J2
+U 1 1 5DDF4983
+P 3250 3650
+F 0 "J2" H 3330 3692 50  0000 L CNN
+F 1 "Conn_01x15" H 3330 3601 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 3250 3650 50  0001 C CNN
+F 3 "~" H 3250 3650 50  0001 C CNN
+	1    3250 3650
+	1    0    0    -1  
+$EndComp
+Text Label 3050 2950 2    47   ~ 0
+16
+Text Label 3050 3050 2    47   ~ 0
+17
+Text Label 3050 3150 2    47   ~ 0
+18
+Text Label 3050 3250 2    47   ~ 0
+19
+Text Label 3050 3350 2    47   ~ 0
+20
+Text Label 3050 3450 2    47   ~ 0
+21
+Text Label 3050 3550 2    47   ~ 0
+22
+Text Label 3050 3650 2    47   ~ 0
+23
+Text Label 3050 3750 2    47   ~ 0
+24
+Text Label 3050 3850 2    47   ~ 0
+25
+Text Label 3050 3950 2    47   ~ 0
+26
+Text Label 3050 4050 2    47   ~ 0
+27
+Text Label 3050 4150 2    47   ~ 0
+28
+Text Label 3050 4250 2    47   ~ 0
+29
+Text Label 3050 4350 2    47   ~ 0
+30
+Text Notes 3900 2800 2    118  ~ 0
+Branchements auxilliaires
+Wire Notes Line
+	1700 2800 3850 2800
+Wire Notes Line
+	3850 2800 3850 4450
+Wire Notes Line
+	3850 4450 1700 4450
+Wire Notes Line
+	1700 4450 1700 2800
+Wire Notes Line
+	1750 2100 1950 2100
+Wire Notes Line
+	1750 2100 1750 2450
+Wire Notes Line
+	1750 2450 1950 2450
+$Comp
+L FusexA:MR45V200B U1
+U 1 1 5DD9871F
+P 1600 5550
+F 0 "U1" H 1600 5940 50  0000 C CNN
+F 1 "MR45V200B" H 1600 5849 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 1100 5925 50  0001 C CNN
+F 3 "" H 1100 5925 50  0001 C CNN
+	1    1600 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR02
+U 1 1 5DD997C5
+P 1950 5400
+F 0 "#PWR02" H 1950 5250 50  0001 C CNN
+F 1 "+3.3V" V 1965 5528 50  0000 L CNN
+F 2 "" H 1950 5400 50  0001 C CNN
+F 3 "" H 1950 5400 50  0001 C CNN
+	1    1950 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR05
+U 1 1 5DD99CEF
+P 5100 2650
+F 0 "#PWR05" H 5100 2500 50  0001 C CNN
+F 1 "+3.3V" H 5115 2823 50  0000 C CNN
+F 2 "" H 5100 2650 50  0001 C CNN
+F 3 "" H 5100 2650 50  0001 C CNN
+	1    5100 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2750 5200 2800
+Connection ~ 5200 2800
+$Comp
+L power:GND #PWR01
+U 1 1 5DD9CAB2
+P 1250 5700
+F 0 "#PWR01" H 1250 5450 50  0001 C CNN
+F 1 "GND" H 1255 5527 50  0000 C CNN
+F 2 "" H 1250 5700 50  0001 C CNN
+F 3 "" H 1250 5700 50  0001 C CNN
+	1    1250 5700
+	1    0    0    -1  
+$EndComp
+Text Label 1950 5700 0    50   ~ 0
+MOSI
+Text Label 1250 5500 2    50   ~ 0
+MISO
+Text Label 1250 5400 2    50   ~ 0
+CS2
+Text Label 4500 4100 2    50   ~ 0
+CS2
+Text Label 1950 5600 0    50   ~ 0
+SCK
+Text Label 4050 3500 3    50   ~ 0
+HOLD_MR
+Wire Wire Line
+	4050 3500 4500 3500
+Text Label 1950 5500 0    50   ~ 0
+HOLD_MR
+Text Label 1250 5600 2    50   ~ 0
+WP_MR
+Text Label 4150 3600 3    50   ~ 0
+WP_MR
+Wire Wire Line
+	4150 3600 4500 3600
+Text Notes 1100 5000 0    50   ~ 0
+Dans le cas d'un bus de données SPI, on partage les signaux MISO, MOSI, SCK.\nEn revanche, chaque composant esclave SPI doit avoir son propre canal CS.\nD'où les CS(1) et CS2.
+Text Label 4350 4000 0    50   ~ 0
+CS3
+Text Label 4300 3200 0    50   ~ 0
+TX_XB
+Text Label 4300 3300 0    50   ~ 0
+RX_XB
+$Comp
+L Device:R R2
+U 1 1 5DE29C03
+P 5150 1650
+F 0 "R2" V 4943 1650 50  0000 C CNN
+F 1 "1kR" V 5034 1650 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5080 1650 50  0001 C CNN
+F 3 "~" H 5150 1650 50  0001 C CNN
+	1    5150 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5DE2AB2B
+P 5450 1650
+F 0 "D1" H 5443 1395 50  0000 C CNN
+F 1 "LED" H 5443 1486 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 5450 1650 50  0001 C CNN
+F 3 "~" H 5450 1650 50  0001 C CNN
+	1    5450 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5DE2B86E
+P 5600 1650
+F 0 "#PWR03" H 5600 1400 50  0001 C CNN
+F 1 "GND" V 5605 1522 50  0000 R CNN
+F 2 "" H 5600 1650 50  0001 C CNN
+F 3 "" H 5600 1650 50  0001 C CNN
+	1    5600 1650
+	0    -1   -1   0   
+$EndComp
+Text Label 4250 3900 0    50   ~ 0
+D7_led
+Wire Wire Line
+	4150 3900 4500 3900
+Text Label 5000 1650 2    50   ~ 0
+D7_led
+$EndSCHEMATC
