@@ -1,0 +1,213 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Xbee_PI06:Xbee802.15.4 U1
+U 1 1 5DF100B0
+P 3000 2200
+F 0 "U1" H 3750 2565 50  0000 C CNN
+F 1 "Xbee802.15.4" H 3750 2474 50  0000 C CNN
+F 2 "" H 1275 2300 50  0001 C CNN
+F 3 "" H 1275 2300 50  0001 C CNN
+	1    3000 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5DF11C17
+P 1950 2200
+F 0 "#PWR02" H 1950 1950 50  0001 C CNN
+F 1 "GND" H 1955 2027 50  0000 C CNN
+F 2 "" H 1950 2200 50  0001 C CNN
+F 3 "" H 1950 2200 50  0001 C CNN
+	1    1950 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5DF11E34
+P 1950 2200
+F 0 "#FLG02" H 1950 2275 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 2373 50  0000 C CNN
+F 2 "" H 1950 2200 50  0001 C CNN
+F 3 "~" H 1950 2200 50  0001 C CNN
+	1    1950 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR04
+U 1 1 5DF132A7
+P 3000 2200
+F 0 "#PWR04" H 3000 2050 50  0001 C CNN
+F 1 "VCC" V 3018 2327 50  0000 L CNN
+F 2 "" H 3000 2200 50  0001 C CNN
+F 3 "" H 3000 2200 50  0001 C CNN
+	1    3000 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5DF13713
+P 3000 3100
+F 0 "#PWR05" H 3000 2850 50  0001 C CNN
+F 1 "GND" V 3005 2972 50  0000 R CNN
+F 2 "" H 3000 3100 50  0001 C CNN
+F 3 "" H 3000 3100 50  0001 C CNN
+	1    3000 3100
+	0    1    1    0   
+$EndComp
+Text Label 3000 2300 2    50   ~ 0
+RX_duino
+Text Label 3000 2400 2    50   ~ 0
+TX_duino
+Text Label 4500 2500 0    50   ~ 0
+~SSEL
+Text Label 4500 2400 0    50   ~ 0
+SCK
+Text Label 4500 2300 0    50   ~ 0
+~ATTN
+Text Label 4500 3100 0    50   ~ 0
+MOSI
+Text Label 3000 2500 2    50   ~ 0
+MISO
+$Comp
+L power:GND #PWR07
+U 1 1 5DF201D2
+P 4100 5550
+F 0 "#PWR07" H 4100 5300 50  0001 C CNN
+F 1 "GND" V 4105 5422 50  0000 R CNN
+F 2 "" H 4100 5550 50  0001 C CNN
+F 3 "" H 4100 5550 50  0001 C CNN
+	1    4100 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR06
+U 1 1 5DF20A3E
+P 3800 3550
+F 0 "#PWR06" H 3800 3400 50  0001 C CNN
+F 1 "VCC" H 3817 3723 50  0000 C CNN
+F 2 "" H 3800 3550 50  0001 C CNN
+F 3 "" H 3800 3550 50  0001 C CNN
+	1    3800 3550
+	1    0    0    -1  
+$EndComp
+Text Label 3600 3550 1    50   ~ 0
+VIN
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5DF2259D
+P 2650 3500
+F 0 "J1" H 2730 3492 50  0000 L CNN
+F 1 "Conn_01x02" H 2730 3401 50  0000 L CNN
+F 2 "" H 2650 3500 50  0001 C CNN
+F 3 "~" H 2650 3500 50  0001 C CNN
+	1    2650 3500
+	1    0    0    -1  
+$EndComp
+Text Label 2450 3500 2    50   ~ 0
+VIN
+$Comp
+L power:GND #PWR03
+U 1 1 5DF22B12
+P 2450 3600
+F 0 "#PWR03" H 2450 3350 50  0001 C CNN
+F 1 "GND" V 2455 3472 50  0000 R CNN
+F 2 "" H 2450 3600 50  0001 C CNN
+F 3 "" H 2450 3600 50  0001 C CNN
+	1    2450 3600
+	0    1    1    0   
+$EndComp
+NoConn ~ 4500 2800
+Text Label 4500 2600 0    50   ~ 0
+~RTS
+Text Label 3000 3000 2    50   ~ 0
+~DTR
+Text Label 3200 5250 2    50   ~ 0
+MISO
+Text Label 3200 5150 2    50   ~ 0
+MOSI
+Text Label 3200 5050 2    50   ~ 0
+~SSEL
+Text Label 4200 5250 0    50   ~ 0
+SCK
+Text Label 3200 4950 2    50   ~ 0
+~ATTN
+Text Label 3200 4750 2    50   ~ 0
+~RTS
+Text Label 3200 4850 2    50   ~ 0
+~DTR
+Text Label 3200 3950 2    50   ~ 0
+RX_duino
+Text Label 3200 4050 2    50   ~ 0
+TX_duino
+NoConn ~ 3000 2600
+NoConn ~ 4500 3000
+NoConn ~ 4500 2900
+NoConn ~ 4500 2700
+NoConn ~ 4500 2200
+NoConn ~ 3200 4150
+NoConn ~ 3200 4250
+NoConn ~ 3200 4350
+NoConn ~ 3200 4450
+NoConn ~ 3200 4550
+NoConn ~ 4200 3950
+NoConn ~ 4200 4050
+NoConn ~ 4200 4350
+NoConn ~ 4200 4750
+NoConn ~ 4200 4850
+NoConn ~ 4200 4950
+NoConn ~ 4200 5050
+NoConn ~ 4200 5150
+Text Label 1150 2150 1    50   ~ 0
+VIN
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5DF2D7DB
+P 1150 2150
+F 0 "#FLG0101" H 1150 2225 50  0001 C CNN
+F 1 "PWR_FLAG" H 1150 2323 50  0000 C CNN
+F 2 "" H 1150 2150 50  0001 C CNN
+F 3 "~" H 1150 2150 50  0001 C CNN
+	1    1150 2150
+	-1   0    0    1   
+$EndComp
+NoConn ~ 3900 3550
+NoConn ~ 3200 4650
+Text Label 3000 2700 2    50   ~ 0
+PWM0
+Text Label 3000 2800 2    50   ~ 0
+PWM1
+Text Label 4200 4550 0    50   ~ 0
+PWM0
+Wire Wire Line
+	3800 5550 3700 5550
+Wire Wire Line
+	4100 5550 3800 5550
+Connection ~ 3800 5550
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 5DF108FE
+P 3700 4550
+F 0 "A1" H 3700 3461 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 3700 3370 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 3700 4550 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 3700 4550 50  0001 C CNN
+	1    3700 4550
+	1    0    0    -1  
+$EndComp
+Text Label 4200 4650 0    50   ~ 0
+PWM1
+$EndSCHEMATC

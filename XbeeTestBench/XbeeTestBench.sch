@@ -168,7 +168,7 @@ U 1 1 5DE58A5F
 P 1400 3400
 F 0 "J1" H 1480 3392 50  0000 L CNN
 F 1 "Conn_01x02" H 1480 3301 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1400 3400 50  0001 C CNN
+F 2 "rex:BatConn" H 1400 3400 50  0001 C CNN
 F 3 "~" H 1400 3400 50  0001 C CNN
 	1    1400 3400
 	1    0    0    -1  
@@ -560,8 +560,6 @@ Wire Notes Line
 	3150 1950 5500 1950
 Wire Notes Line
 	3150 4550 3150 1750
-Wire Notes Line
-	3150 1750 6950 1750
 Text Notes 5500 1950 2    118  Italic 24
 Section Micro-contrôleur
 NoConn ~ 2450 2450
@@ -608,4 +606,150 @@ F 3 "~" H 2200 4000 50  0001 C CNN
 	1    2200 4000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J5
+U 1 1 5DEA7475
+P 5650 1250
+F 0 "J5" H 5730 1242 50  0000 L CNN
+F 1 "Conn_01x08" H 5730 1151 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 5650 1250 50  0001 C CNN
+F 3 "~" H 5650 1250 50  0001 C CNN
+	1    5650 1250
+	1    0    0    -1  
+$EndComp
+Text Label 5450 1650 2    50   ~ 0
+INT
+Text Label 5450 1550 2    50   ~ 0
+AD0
+Text Label 5450 1250 2    50   ~ 0
+SDA
+Text Label 5450 1150 2    50   ~ 0
+SCL
+$Comp
+L power:GND #PWR014
+U 1 1 5DEA9213
+P 5450 1050
+F 0 "#PWR014" H 5450 800 50  0001 C CNN
+F 1 "GND" V 5455 922 50  0000 R CNN
+F 2 "" H 5450 1050 50  0001 C CNN
+F 3 "" H 5450 1050 50  0001 C CNN
+	1    5450 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 5DEA998E
+P 5450 950
+F 0 "#PWR013" H 5450 800 50  0001 C CNN
+F 1 "+5V" V 5465 1078 50  0000 L CNN
+F 2 "" H 5450 950 50  0001 C CNN
+F 3 "" H 5450 950 50  0001 C CNN
+	1    5450 950 
+	0    -1   -1   0   
+$EndComp
+Text Notes 4800 700  0    118  Italic 24
+Section MPU-6050\n
+Wire Notes Line
+	4800 500  6600 500 
+Wire Notes Line
+	6600 500  6600 1750
+Wire Notes Line
+	4800 800  6600 800 
+Wire Notes Line
+	4800 500  4800 1750
+Wire Notes Line
+	3150 1750 6950 1750
+Text Label 4850 3700 0    50   ~ 0
+SDA
+Text Label 4850 3800 0    50   ~ 0
+SCL
+Text Label 3700 3000 0    50   ~ 0
+INT
+Text Label 6300 1550 2    50   ~ 0
+AD0
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5DEC5912
+P 6500 1450
+F 0 "J6" H 6450 1550 50  0000 L CNN
+F 1 "Conn_01x02" H 6150 1250 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 6500 1450 50  0001 C CNN
+F 3 "~" H 6500 1450 50  0001 C CNN
+	1    6500 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR017
+U 1 1 5DEC6210
+P 6300 1450
+F 0 "#PWR017" H 6300 1300 50  0001 C CNN
+F 1 "+5V" V 6315 1578 50  0000 L CNN
+F 2 "" H 6300 1450 50  0001 C CNN
+F 3 "" H 6300 1450 50  0001 C CNN
+	1    6300 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5DEC689E
+P 6250 1100
+F 0 "R2" H 6300 1250 50  0000 L CNN
+F 1 "1kR_ADPullDown" H 5950 1050 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6180 1100 50  0001 C CNN
+F 3 "~" H 6250 1100 50  0001 C CNN
+	1    6250 1100
+	1    0    0    -1  
+$EndComp
+Text Label 6250 950  2    50   ~ 0
+AD0
+$Comp
+L power:GND #PWR016
+U 1 1 5DEC72B3
+P 6250 1250
+F 0 "#PWR016" H 6250 1000 50  0001 C CNN
+F 1 "GND" V 6255 1122 50  0000 R CNN
+F 2 "" H 6250 1250 50  0001 C CNN
+F 3 "" H 6250 1250 50  0001 C CNN
+	1    6250 1250
+	0    -1   -1   0   
+$EndComp
+Text Label 3500 3300 0    50   ~ 0
+debugLed
+Text Label 5400 2200 2    50   ~ 0
+debugLed
+$Comp
+L Device:LED D1
+U 1 1 5DEC9C8F
+P 5850 2200
+F 0 "D1" H 5843 1945 50  0000 C CNN
+F 1 "LED" H 5843 2036 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 5850 2200 50  0001 C CNN
+F 3 "~" H 5850 2200 50  0001 C CNN
+	1    5850 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5DECA5E3
+P 6000 2200
+F 0 "#PWR015" H 6000 1950 50  0001 C CNN
+F 1 "GND" V 6005 2072 50  0000 R CNN
+F 2 "" H 6000 2200 50  0001 C CNN
+F 3 "" H 6000 2200 50  0001 C CNN
+	1    6000 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5DECC8B0
+P 5550 2200
+F 0 "R1" V 5343 2200 50  0000 C CNN
+F 1 "1kR_Led" V 5434 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5480 2200 50  0001 C CNN
+F 3 "~" H 5550 2200 50  0001 C CNN
+	1    5550 2200
+	0    1    1    0   
+$EndComp
+NoConn ~ 5450 1450
+NoConn ~ 5450 1350
 $EndSCHEMATC
