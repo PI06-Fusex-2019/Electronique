@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Banc d'essai de télémétrie et mesure"
+Date "2019-12-12"
+Rev "R2"
+Comp "PI06 Fusex"
+Comment1 "Arnaud Schlumberger"
 Comment2 ""
 Comment3 ""
 Comment4 ""
