@@ -1,4 +1,4 @@
-update=dim. 12 janv. 2020 18:01:34 CET
+update=mer. 22 janv. 2020 17:16:11 CET
 version=1
 last_client=kicad
 [general]
@@ -15,7 +15,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=../../../Bureau/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
@@ -43,6 +43,7 @@ TrackWidth2=0.4
 TrackWidth3=0.5
 TrackWidth4=0.7
 TrackWidth5=1
+TrackWidth6=1.5
 ViaDiameter1=0.8
 ViaDrill1=0.4
 ViaDiameter2=1.8

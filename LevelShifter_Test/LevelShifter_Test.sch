@@ -1,0 +1,283 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:2N7000 Q?
+U 1 1 5E29A6E9
+P 2850 4550
+F 0 "Q?" V 3011 4550 60  0000 C CNN
+F 1 "2N7000" V 3117 4550 60  0000 C CNN
+F 2 "digikey-footprints:TO-92-3" H 3050 4750 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 3050 4850 60  0001 L CNN
+F 4 "2N7000FS-ND" H 3050 4950 60  0001 L CNN "Digi-Key_PN"
+F 5 "2N7000" H 3050 5050 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 3050 5150 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 3050 5250 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 3050 5350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" H 3050 5450 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 60V 200MA TO-92" H 3050 5550 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 3050 5650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3050 5750 60  0001 L CNN "Status"
+	1    2850 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E29AFC9
+P 2450 4250
+F 0 "R?" H 2520 4296 50  0000 L CNN
+F 1 "R" H 2520 4205 50  0000 L CNN
+F 2 "" V 2380 4250 50  0001 C CNN
+F 3 "~" H 2450 4250 50  0001 C CNN
+	1    2450 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E29B1A5
+P 3200 4250
+F 0 "R?" H 3270 4296 50  0000 L CNN
+F 1 "R" H 3270 4205 50  0000 L CNN
+F 2 "" V 3130 4250 50  0001 C CNN
+F 3 "~" H 3200 4250 50  0001 C CNN
+	1    3200 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4400 2450 4550
+Wire Wire Line
+	2450 4550 2650 4550
+Wire Wire Line
+	3050 4550 3200 4550
+Wire Wire Line
+	3200 4550 3200 4400
+Wire Wire Line
+	2750 4250 2750 4100
+Wire Wire Line
+	2750 4100 2450 4100
+Wire Wire Line
+	2450 4100 2450 4000
+Connection ~ 2450 4100
+Wire Wire Line
+	3200 4100 3200 4000
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E29BA3E
+P 2450 4000
+F 0 "#PWR?" H 2450 3850 50  0001 C CNN
+F 1 "+3V3" H 2465 4173 50  0000 C CNN
+F 2 "" H 2450 4000 50  0001 C CNN
+F 3 "" H 2450 4000 50  0001 C CNN
+	1    2450 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E29BCB1
+P 3200 4000
+F 0 "#PWR?" H 3200 3850 50  0001 C CNN
+F 1 "+5V" H 3215 4173 50  0000 C CNN
+F 2 "" H 3200 4000 50  0001 C CNN
+F 3 "" H 3200 4000 50  0001 C CNN
+	1    3200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E29C073
+P 1150 3650
+F 0 "#PWR?" H 1150 3400 50  0001 C CNN
+F 1 "GND" H 1155 3477 50  0000 C CNN
+F 2 "" H 1150 3650 50  0001 C CNN
+F 3 "" H 1150 3650 50  0001 C CNN
+	1    1150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E29C3DC
+P 1550 3650
+F 0 "#PWR?" H 1550 3500 50  0001 C CNN
+F 1 "+3V3" H 1565 3823 50  0000 C CNN
+F 2 "" H 1550 3650 50  0001 C CNN
+F 3 "" H 1550 3650 50  0001 C CNN
+	1    1550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E29C844
+P 1950 3650
+F 0 "#PWR?" H 1950 3500 50  0001 C CNN
+F 1 "+5V" H 1965 3823 50  0000 C CNN
+F 2 "" H 1950 3650 50  0001 C CNN
+F 3 "" H 1950 3650 50  0001 C CNN
+	1    1950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E29D32C
+P 1950 3650
+F 0 "#FLG?" H 1950 3725 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 3823 50  0000 C CNN
+F 2 "" H 1950 3650 50  0001 C CNN
+F 3 "~" H 1950 3650 50  0001 C CNN
+	1    1950 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E29D457
+P 1550 3650
+F 0 "#FLG?" H 1550 3725 50  0001 C CNN
+F 1 "PWR_FLAG" H 1550 3823 50  0000 C CNN
+F 2 "" H 1550 3650 50  0001 C CNN
+F 3 "~" H 1550 3650 50  0001 C CNN
+	1    1550 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E29D5A5
+P 1150 3650
+F 0 "#FLG?" H 1150 3725 50  0001 C CNN
+F 1 "PWR_FLAG" H 1150 3823 50  0000 C CNN
+F 2 "" H 1150 3650 50  0001 C CNN
+F 3 "~" H 1150 3650 50  0001 C CNN
+	1    1150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5E2A0B8C
+P 2000 4650
+F 0 "J?" H 1918 4325 50  0000 C CNN
+F 1 "Conn_01x02" H 1918 4416 50  0000 C CNN
+F 2 "" H 2000 4650 50  0001 C CNN
+F 3 "~" H 2000 4650 50  0001 C CNN
+	1    2000 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5E2A0F0D
+P 3700 4550
+F 0 "J?" H 3780 4542 50  0000 L CNN
+F 1 "Conn_01x02" H 3780 4451 50  0000 L CNN
+F 2 "" H 3700 4550 50  0001 C CNN
+F 3 "~" H 3700 4550 50  0001 C CNN
+	1    3700 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2A1645
+P 2200 4650
+F 0 "#PWR?" H 2200 4400 50  0001 C CNN
+F 1 "GND" H 2205 4477 50  0000 C CNN
+F 2 "" H 2200 4650 50  0001 C CNN
+F 3 "" H 2200 4650 50  0001 C CNN
+	1    2200 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2A195B
+P 3500 4650
+F 0 "#PWR?" H 3500 4400 50  0001 C CNN
+F 1 "GND" H 3505 4477 50  0000 C CNN
+F 2 "" H 3500 4650 50  0001 C CNN
+F 3 "" H 3500 4650 50  0001 C CNN
+	1    3500 4650
+	1    0    0    -1  
+$EndComp
+Text Notes 1950 5150 0    50   ~ 0
+LOWSIDE\n\n
+Text Notes 3400 5050 0    50   ~ 0
+HIGHSIDE
+Wire Wire Line
+	2200 4550 2450 4550
+Connection ~ 2450 4550
+Wire Wire Line
+	3200 4550 3500 4550
+Connection ~ 3200 4550
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5E2A3439
+P 4100 3600
+F 0 "J?" H 4180 3592 50  0000 L CNN
+F 1 "Conn_01x02" H 4180 3501 50  0000 L CNN
+F 2 "" H 4100 3600 50  0001 C CNN
+F 3 "~" H 4100 3600 50  0001 C CNN
+	1    4100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5E2A40CE
+P 4100 4050
+F 0 "J?" H 4180 4042 50  0000 L CNN
+F 1 "Conn_01x02" H 4180 3951 50  0000 L CNN
+F 2 "" H 4100 4050 50  0001 C CNN
+F 3 "~" H 4100 4050 50  0001 C CNN
+	1    4100 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2A4655
+P 3900 3700
+F 0 "#PWR?" H 3900 3450 50  0001 C CNN
+F 1 "GND" H 3905 3527 50  0000 C CNN
+F 2 "" H 3900 3700 50  0001 C CNN
+F 3 "" H 3900 3700 50  0001 C CNN
+	1    3900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2A4DD0
+P 3900 4150
+F 0 "#PWR?" H 3900 3900 50  0001 C CNN
+F 1 "GND" H 3905 3977 50  0000 C CNN
+F 2 "" H 3900 4150 50  0001 C CNN
+F 3 "" H 3900 4150 50  0001 C CNN
+	1    3900 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E2A5190
+P 3900 3600
+F 0 "#PWR?" H 3900 3450 50  0001 C CNN
+F 1 "+5V" V 3915 3728 50  0000 L CNN
+F 2 "" H 3900 3600 50  0001 C CNN
+F 3 "" H 3900 3600 50  0001 C CNN
+	1    3900 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E2A568D
+P 3900 4050
+F 0 "#PWR?" H 3900 3900 50  0001 C CNN
+F 1 "+3V3" V 3915 4178 50  0000 L CNN
+F 2 "" H 3900 4050 50  0001 C CNN
+F 3 "" H 3900 4050 50  0001 C CNN
+	1    3900 4050
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
